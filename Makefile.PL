@@ -1,7 +1,12 @@
 use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
 WriteMakefile(
-    'NAME'	=> 'Db::Mediasurface',
-    'VERSION_FROM' => 'Mediasurface.pm', # finds $VERSION
+	      'ABSTRACT_FROM' => 'Mediasurface.pm',
+	      'AUTHOR' => 'Nigel Wetters <nwetters@cpan.org>',
+	      'NAME' => 'Db::Mediasurface',
+	      'PREREQ_PM' => {
+		  'DBI'                          => '0',
+		  'Db::Mediasurface::Cache'      => '0',
+		  'Db::Mediasurface::ReadConfig' => '0'
+	      },
+	      'VERSION_FROM' => 'Mediasurface.pm',
 );

@@ -1,5 +1,5 @@
 package Db::Mediasurface;
-$VERSION = '0.01';
+$VERSION = '0.02';
 use strict;
 use Carp;
 use DBI;
@@ -63,7 +63,7 @@ Db::Mediasurface - manipulates a Mediasurface database.
 
 =head1 VERSION
 
-This document refers to version 0.01 of DB::Mediasurface, released August 3, 2001.
+This document refers to version 0.02 of DB::Mediasurface, released August 3, 2001.
 
 =head1 SYNOPSIS
 
